@@ -28,11 +28,14 @@
           <!-- Navbar content -->
           <a class="navbar-brand" href="#">MyDairy</a>
           <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'index' %}">Dashboard</a>
+            </li>
         <li class="nav-item">
-          <a class="nav-link active" href="{% url 'account' %}">My Account</a>
+          <a class="nav-link active" href="{% url 'account' %}">Account</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'entries' %}">My Entries</a>
+          <a class="nav-link" href="{% url 'entries' %}">Entries</a>
         </li>
         </ul>
       </nav>

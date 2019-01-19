@@ -1,4 +1,4 @@
-<li><a href="{% url 'entries' %}">My Entries</a></li>
-<li><a href="{% url 'index' %}">Home Page</a></li>
-
-<h1>This is my account page</h1>
+{% extends 'dashboard/base.html' %}
+{% block content %}
+  <h1>This is my Account</h1>
+{% endblock %}
