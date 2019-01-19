@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,24 +9,64 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Personalized CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/main.css' %}">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
   </head>
 
   <body>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-light navbar-custom" style="background-color: #e3f2fd;">
         <!-- Navbar content -->
-        <div class = "d-flex">
-          <div class = ".mr-auto">
-          <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        </ul>
-        </div>
-      </div>
+        <a class="navbar-brand" href="#">MyDairy</a>
+        <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">My Account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Entries</a>
+      </li>
+      </ul>
     </nav>
+    <div class="container">
+		<div class="row row-striped">
+			<div class="col-2 text-right">
+				<h1 class="display-4"><span class="badge badge-secondary">23</span></h1>
+				<h2>OCT</h2>
+			</div>
+			<div class="col-10">
+				<h3 class="text-uppercase"><strong>Ice Cream Social</strong></h3>
+				<ul class="list-inline">
+				    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
+					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
+					<li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Cafe</li>
+				</ul>
+				<p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+		<div class="row row-striped">
+			<div class="col-2 text-right">
+				<h1 class="display-4"><span class="badge badge-secondary">27</span></h1>
+				<h2>OCT</h2>
+			</div>
+			<div class="col-10">
+				<h3 class="text-uppercase"><strong>Operations Meeting</strong></h3>
+				<ul class="list-inline">
+				    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Friday</li>
+					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 2:30 PM - 4:00 PM</li>
+					<li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> Room 4019</li>
+				</ul>
+				<p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
