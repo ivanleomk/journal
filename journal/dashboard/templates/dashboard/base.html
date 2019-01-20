@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Personalized CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'dashboard/main.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'dashboard/flower.css' %}">
+    <script src="{% static 'dashboard/welcome.js' %}"></script>
+
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -25,16 +28,17 @@
   <body>
     <body>
       <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom" style="background-color: #e3f2fd;">
-    <!-- Navbar content -->
-        <div class="container-fluid">
+        <!-- Navbar content -->
+
           <ul class="nav navbar-nav">
             <li><a class="nav-link" href="{% url 'entries' %}">My Entries</a></li>
             <li><a class="nav-link" href="{% url 'index' %}">Home Page</a></li>
             <li><a class="nav-link" href="{% url 'new' %}">New Entry</a></li>
             <li><a class="nav-link" href="{% url 'account' %}">My Account</a></li>
           </ul>
-        </div>
+
       </nav>
+
 
     {% block content %}
     {% endblock %}
