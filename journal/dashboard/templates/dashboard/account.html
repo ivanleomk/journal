@@ -2,6 +2,6 @@
 {% block content %}
 <div class = "center">
   <img width:200px class = "profilepic" src = "http://www.aretestrength.com/wp-content/uploads/2016/09/opulent-profile-square-07.jpg">
-  <h3>Hi {{ user.username }},You have {{commits}} entries. Care to add one more?</h3>
+  <h3>Hi {{ user.username }},You have {{commits}} entries. Care to add one <a href="{% url 'new' %}">more</a></h3>
 </div>
 {% endblock %}
