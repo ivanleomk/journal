@@ -15,7 +15,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+    <!-- Include the above in your HEAD tag ---------->
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
@@ -24,21 +24,18 @@
 
   <body>
     <body>
-      <nav class="navbar navbar-light navbar-custom" style="background-color: #e3f2fd;">
-          <!-- Navbar content -->
-          <a class="navbar-brand" href="#">MyDairy</a>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" href="{% url 'index' %}">Dashboard</a>
-            </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="{% url 'account' %}">Account</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'entries' %}">Entries</a>
-        </li>
-        </ul>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom" style="background-color: #e3f2fd;">
+    <!-- Navbar content -->
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a class="nav-link" href="{% url 'entries' %}">My Entries</a></li>
+            <li><a class="nav-link" href="{% url 'index' %}">Home Page</a></li>
+            <li><a class="nav-link" href="{% url 'new' %}">New Entry</a></li>
+            <li><a class="nav-link" href="{% url 'account' %}">My Account</a></li>
+          </ul>
+        </div>
       </nav>
+
     {% block content %}
     {% endblock %}
 

@@ -1,4 +1,4 @@
-#!/Users/ivan/Documents/Coding/Practice/djangov1/virtual/bin/python
+#!/Users/ivan/Documents/GitHub/journal/virtual/bin/python
 
 import sys
 import getopt
