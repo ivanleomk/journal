@@ -1,12 +1,7 @@
-h1 {text-align: center; colour: White; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large}
-h2 {text-align: center; colour: White; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large}
-
-
 body {
   margin: 0;
   padding: 0;
   cursor: default;
-  text-align: center;
   display: flex;
   justify-content: center;
   background-color: #b6c6d3;
@@ -15,15 +10,17 @@ body {
 svg {
   height: 99vh;
   max-height: 100vw;
+  width: 200vh
 }
-.no-fill, .cactus-prickle {
+.no-fill,
+.cactus-prickle {
   fill: none;
 }
 
 .replay-text {
   fill: #ffffff;
-  font-size: 24px;
-  font-family: Helvetica, sans, monospace, sans-serif;
+  font-size: 40px;
+  font-family: sans, monospace, sans-serif;
   user-select: none;
 }
 

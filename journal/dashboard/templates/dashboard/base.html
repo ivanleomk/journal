@@ -10,9 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Personalized CSS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/main.css' %}">
-    <link rel="stylesheet" type='text/css' href="{% static 'dashboard/flower.css' %}">
     <link rel="stylesheet" type='text/css' href="{% static 'dashboard/form.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'dashboard/account.css' %}">
+
     <script src="{% static 'dashboard/welcome.js' %}"></script>
 
 
@@ -23,6 +23,8 @@
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="{% static 'dashboard/main.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'dashboard/flower.css' %}">
 
   </head>
 
@@ -32,6 +34,9 @@
         <!-- Navbar content -->
 
           <ul class="nav navbar-nav">
+            <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/L0qWkvc/mydiarylogo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+          </a>
             <li><a class="nav-link" href="{% url 'entries' %}">My Entries</a></li>
             <li><a class="nav-link" href="{% url 'index' %}">Home Page</a></li>
             <li><a class="nav-link" href="{% url 'new' %}">New Entry</a></li>

@@ -2,16 +2,10 @@
 {% block content %}
 <div>
   <header>New Diary Entry</header>
-  <form id="form" class="topBefore">
-
-  		  <input id="name" type="text" placeholder="NAME">
+  <form id="form" class="topBefore" action = "" method = "POST">
+    {% csrf_token %}
+  		  <textarea id="message" name = "entry" type="text" placeholder="MESSAGE"></textarea>
   		  <br>
-  		  <input id="email" type="text" placeholder="E-MAIL">
-  		  <br>
-  		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-  		  <br>
-  		  <br>
-  		  <input id="submit" type="submit" value="GO!">
-  </div>
-
+  		  <input id = "submit" type="submit" value="Post"/>
+</div>
 {% endblock %}
