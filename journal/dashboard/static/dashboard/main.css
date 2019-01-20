@@ -8,3 +8,16 @@
 .navbar-custom .nav-item:hover .nav-link {
     background-color: white;
 }
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table{
+  margin-top:100px;
+}

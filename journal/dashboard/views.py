@@ -28,8 +28,8 @@ def entries(request):
 #Account Page
 def account(request):
     template = loader.get_template('dashboard/account.html')
-    context = {}
-    return HttpResponse(template.render(context,request))
+    entries = entry.objects.all()
+    return render(request, 'dashboard/account.html', {"commits": len(entries.values())})
 
 #New Entry!
 def newentry(request):
