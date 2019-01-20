@@ -10,8 +10,12 @@
       </tr>
     </thead>
     <tbody>
-
-      
+      {% for entry in entries %}
+      <tr>
+        <td>{{entry.0}}</td>
+        <td>{{entry.1}}</td>
+      </tr>
+      {% endfor %}
     </tbody>
   </table>
 </div>
